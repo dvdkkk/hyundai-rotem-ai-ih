@@ -78,9 +78,9 @@ interface ContentContextType {
 
 const ContentContext = createContext<ContentContextType | undefined>(undefined);
 
-// 버전을 v9로 올려서 로컬 스토리지를 강제 갱신함
-const STORAGE_KEY = 'site_content_v9';
-const LOG_KEY = 'visitor_logs_v9';
+// 변경할 코드 (v10으로 변경)
+const STORAGE_KEY = 'site_content_v10';
+const LOG_KEY = 'visitor_logs_v10';
 
 export const ContentProvider: React.FC<{ children: ReactNode }> = ({ children }) => {
   const [content, setContent] = useState<SiteContent>(defaultContent);
